@@ -1,0 +1,102 @@
+.border {
+    border: 2px solid white;
+    margin: 3px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify {
+    justify-content: center;
+}
+
+.align {
+    align-items: center;
+}
+
+.bg-grey {
+    background-color: #121212;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+/* for scroll bar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #333;
+}
+
+::-webkit-slider-thumb {
+    background-color: #666;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb :hover {
+    background: #888
+}
+
+
+
+/* Responsiveness */
+@media (max-width : 1300px) {
+    .left {
+        position: absolute;
+        left: -120%;
+        transition: all .3s;
+        z-index: 1;
+        width: 373px;
+        height: 835px;
+        background-color: black;
+    }
+
+    .right {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .cardcont {
+        height: 580px;
+    }
+
+    .card {
+        height: 390px;
+        width: 310px;
+    }
+
+    .playbar {
+        width: calc(100vw-70px);
+        height: 90px;
+        bottom: -7px;
+    }
+
+    .seekbar {
+        width: calc(100vw-70px);
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .lt {
+        display: none;
+    }
+
+    .rt {
+        display: none;
+    }
+
+    .songinfo,
+    .songtime {
+        padding: 5px 7px;
+    }
+
+    .range input {
+        width: 64px;
+    }
+}
